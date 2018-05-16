@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pig Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Saira:400,700|Saira+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="main-wrap">
+			<div id="gameBoard">
+					<h1 id="game-title">PIG GAME</h1>
+					<div id="menu">
+						<div class="menu" id="newGame"><i class="material-icons">play_circle_filled</i>NEW GAME</div>
+						<div class="menu" id="rollDice"><i class="material-icons">autorenew</i>ROLL DICE</div>
+						<img src="images/dice1.jpg" id="dice" class="menu">
+						<div class="menu" id="hold"><i class="material-icons">pause_circle_filled</i>HOLD</div>
+					</div>
+
+					<div class="playerBoard active" id="player1">
+						<div class="scoreBoard">
+							<h2>Player 1</h2>
+							<p class="gameScore" id="gameScore-1">XX</p>
+						</div>
+						<div class="currentScore">
+							<p>current score</p>
+							<p class="currentScore-score" id="currentScore-1">X</p>
+						</div>
+					</div>
+
+					<div class="playerBoard" id="player2">
+						<div class="scoreBoard">
+							<h2>Player 2</h2>
+							<p class="gameScore" id="gameScore-2">XX</p>
+						</div>
+						<div class="currentScore">
+							<p>current score</p>
+							<p class="currentScore-score" id="currentScore-2">X</p>
+						</div>
+					</div>
+				</div>
+				<div id="inputDiv">
+					<input type="text" placeholder="New Score?">
+					<p>default score is 50</p>
+				</div>
+	</div>
+<!-- <script src="scripts.js"></script> -->
+<script src="challenges.js"></script>
+</body>
+</html>
